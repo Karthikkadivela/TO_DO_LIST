@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>TO DO</title>
+    <script src="https://kit.fontawesome.com/b862bb0d81.js" crossorigin="anonymous"></script>
+
+</head>
+    <style>
+        *{
+            padding:0vh;
+            margin:0vh;
+        }
+        .main{
+            width:100%;
+            height:50%;
+            position:fixed;
+            min-height: 300px;
+            background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/great-ocean-road-174028267-1494616481.jpg?crop=1000,500,x0,y0,safe&width=980&auto=webp&optimize=medium&io=1");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .parent{
+            box-sizing: border-box;
+            position:fixed;
+            top:18%;
+            left:35%;
+            width:50%;
+        }
+        .dark{
+            position: fixed;
+            top:5px;
+            right:5px;
+        }
+        input[type=text]{
+            width: 75%;
+            padding: 12px 12px;
+            margin-bottom: 3vh;
+            background-color: white;
+            display:inline-block;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .heading{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:75%;
+            margin-bottom:10%;
+        }
+        li{
+            width: 80%;
+            padding: 10px 10px;
+            background-color: white;
+            display:block;
+            border: 1px solid whitesmoke;
+            box-sizing: border-box;
+        }
+        .todonav{
+            width: 80%;
+            padding: 10px 0px;
+            background-color: white;
+            display:flex;
+            border: 1px solid whitesmoke;
+            box-sizing: border-box;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    .nav_bar{
+        position:fixed;
+        bottom:0px;
+        background-color: wheat;
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+        padding:5px 0px;
+        
+    }
+    .media{
+        padding-right: 5px;
+    }
+    .name{
+        padding-left: 5px;
+    }
+    input[type=radio]{
+        margin-right:1.5vw;
+    }
+    li:hover{
+        background-color: wheat;
+    }
+    li:hover>.item{
+        background-color: wheat;
+        visibility: visible;
+    }
+    .item{
+        position:absolute;
+        right:10.5vw;    
+    }
+    .item:hover>.item{
+        visibility: visible;
+    }
+    i.fa-cloud-moon{
+        position: fixed;
+        top:5px;
+        right:5px;
+    }
+    i.fa-cloud-moon:hover{
+        color:black;
+    }
+    </style>
+    <body>
+    <div class="main">
+       <div class="parent">
+        <h2 style="color: white;"><i class="fas fa-cloud-moon"></i></h2>
+           <div class="heading">
+               <h2>TO DO</h2>
+           </div>
+            <div class="todo">
+               <input type="text" placeholder="Enter your work to be done">
+            </div>
+            <div class="list_item">
+                <ul style="list-style: none;">
+                    <li><input type="radio">Jog around the park for 15minutes<a class="item" style="visibility: hidden;"><i class="far fa-times-circle"></i></a></li>
+                    <li><input type="radio">10 minutes meditation<a class="item" style="visibility: hidden;"><i class="far fa-times-circle"></i></a></li>
+                    <li><input type="radio">Read for 1hour<a class="item" style="visibility: hidden;"><i class="far fa-times-circle"></i></a></li>
+                    <li><input type="radio">Pick up groceries<a class="item" style="visibility: hidden;"><i class="far fa-times-circle"></i></a></li>
+                    <li><input type="radio">Complete your morning routine<a class="item" style="visibility: hidden;"><i class="far fa-times-circle"></i></a></li>
+                </ul>
+            </div>
+            <div class="todonav">
+                <div>5 task left</div>
+                <div>All  Active  Completed</div>
+                <div>Clear</div>
+            </div>
+       </div>
+    </div>
+
+       <div class="nav_bar">
+            <div class="name">Karthik K N</div>
+            <div class="social">
+                <a class="media" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="media" href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                <a class="media" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+       </div>
+    </body>
+</html>
